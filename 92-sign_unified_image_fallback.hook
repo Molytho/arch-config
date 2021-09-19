@@ -8,5 +8,5 @@ Target = usr/lib/initcpio/*
 [Action]
 Description = Sign Unified Image for secureboot
 When = PostTransaction
-Exec = /usr/bin/sbsign --key /root/.secureboot/MOK/MOK.key --cert /root/.secureboot/MOK/MOK.crt --output /efi/EFI/Arch/linux.efi /boot/linux.efi
+Exec = /usr/bin/sbsign --key /root/.secureboot/MOK/MOK.key --cert /root/.secureboot/MOK/MOK.crt --output /efi/EFI/Arch/linux-fallback.efi /boot/linux-fallback.efi
 Depends = sbsigntools
